@@ -1,0 +1,4 @@
+C:\Users\PC\source\repos\score\score\obj\Debug\score.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\score\score\obj\Debug\score.Form1.resources
+C:\Users\PC\source\repos\score\score\obj\Debug\score.Properties.Resources.resources
+C:\Users\PC\source\repos\score\score\obj\Debug\score.csproj.GenerateResource.cache
