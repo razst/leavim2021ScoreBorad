@@ -2,3 +2,14 @@ C:\Users\PC\source\repos\score\score\obj\Debug\score.csprojAssemblyReference.cac
 C:\Users\PC\source\repos\score\score\obj\Debug\score.Form1.resources
 C:\Users\PC\source\repos\score\score\obj\Debug\score.Properties.Resources.resources
 C:\Users\PC\source\repos\score\score\obj\Debug\score.csproj.GenerateResource.cache
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\bin\Debug\score.exe.config
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\bin\Debug\score.exe
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\bin\Debug\score.pdb
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.csprojAssemblyReference.cache
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.Properties.Resources.resources
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.csproj.GenerateResource.cache
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.csproj.CoreCompileInputs.cache
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.exe
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.pdb
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.Main.resources
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.Yeruham.resources
