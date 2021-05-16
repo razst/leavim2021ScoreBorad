@@ -32,7 +32,7 @@ namespace score
         private void changeFormTo(Form f)
         {
             //this.Hide();
-            f.ShowDialog();
+            f.Show();// ShowDialog();
             f.StartPosition = FormStartPosition.Manual;
             f.Location = f.Location; // TODO  did you mean = this.Location ?
             f.Size = f.Size;
