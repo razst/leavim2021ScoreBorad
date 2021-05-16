@@ -16,6 +16,9 @@ namespace score
     public partial class Yeruham : Form
     {
         private SerialPort _SerialPort;
+        private string indata = "";
+        private SerialPort mySerialPort = null;
+
         public Yeruham(SerialPort Serial)
         {
             InitializeComponent();
@@ -30,9 +33,64 @@ namespace score
             ScorePictureBox.BackColor = Color.Transparent; // change the background color to Transparent
         }
 
+        private void DataReceivedHandler(
+                                object sender,
+                                SerialDataReceivedEventArgs e)
+        {
+            SerialPort sp = (SerialPort)sender;
+            indata = sp.ReadLine();
+
+            this.Invoke(new EventHandler(displayDataEvent));
+
+        }
+
+
+        private void displayDataEvent(object sender, EventArgs e)
+        {
+            
+            if (indata.Contains(','))
+            {
+                label1.Text = indata;
+                string[] splitData = indata.Split(',');
+            }
+        }
+
+
         private void StartButton_Click(object sender, EventArgs e)
         {
-            updateScore();
+            mySerialPort = new SerialPort(Properties.Settings.Default.port);
+
+            mySerialPort.BaudRate = 9600;
+            mySerialPort.Parity = Parity.None;
+            mySerialPort.StopBits = StopBits.One;
+            mySerialPort.DataBits = 8;
+            mySerialPort.Handshake = Handshake.None;
+            mySerialPort.RtsEnable = true;
+
+            try
+            {
+                mySerialPort.Open();
+                mySerialPort.WriteLine("S");
+                StartButton.Hide();
+            }
+            catch
+            {
+                MessageBox.Show("unable to connect to temp sensor, check COM number in settings", "error");
+            }
+
+
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+
+
+
+
+            //updateScore();
+        }
+
+        private void Yeruham_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (mySerialPort != null)
+                mySerialPort.Close();
         }
     }
 }
