@@ -165,7 +165,7 @@ void setup() {
 
 int findRandWIn() {
   activeWin = random(4);
-  Serial.print("first rand");
+  Serial.println("first rand");
   Serial.println(activeWin);
 
   while (activeWin == lastwin) {
@@ -173,7 +173,7 @@ int findRandWIn() {
     activeWin = random(4);
   }
 //  activeWin=1;
-  Serial.print("second rand");
+  Serial.println("second rand");
   Serial.println(activeWin);
   lastwin = activeWin;
 
@@ -186,7 +186,7 @@ bool checkStopGame(){
   if (Serial.available() > 0) {
     // read the incoming byte:
     incomingByte = Serial.read();
-    if (incomingByte == 69) { // we got the "S" latter
+    if (incomingByte == 69) { // we got the "E" latter
       return true;
     }
   }
@@ -197,7 +197,10 @@ void sendInfoToGUI(){
     // send info to control GUI
     Serial.print(millis()-timeStartPlay);
     Serial.print(",");
+    delay(1000);
+    score = score + 10;
     Serial.println(score);  
+    
 }
 
 void startPlay() {
@@ -208,7 +211,7 @@ void startPlay() {
   score=0;
   timeStartPlay = millis();  //initial start time
   findRandWIn();
-  while (millis() - timeStartPlay <= TIME_PER_PLAY) {
+  while (true) {
     sendInfoToGUI();
     if (checkLDRs()) {
       findRandWIn();

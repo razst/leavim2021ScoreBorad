@@ -15,43 +15,37 @@ namespace score
 {
     public partial class Main : Form
     {
-        private SerialPort _SerialPort;
         public Main()
         {
             InitializeComponent();
-            //_SerialPort = new SerialPort(Properties.Settings.Default.port, Properties.Settings.Default.BaudRate);
-            //try
-           // {
-             //   _SerialPort.Open();
-           // }
-            //catch
-            //{
-              //  MessageBox.Show("check COM number in settings", "error");
-            //}
+            if (Global.whoPlay[0])
+                Husidman.Enabled = false;
+            if (Global.whoPlay[1])
+                Yeruham.Enabled = false;
+            if (Global.whoPlay[2])
+                OrtBraudeKarmiel.Enabled = false;
         }
         private void changeFormTo(Form f)
         {
-            //this.Hide();
-            f.Show();// ShowDialog();
-            f.StartPosition = FormStartPosition.Manual;
-            f.Location = f.Location; // TODO  did you mean = this.Location ?
-            f.Size = f.Size;
-            //this.Close();
-        }
-
-        private void Yeruham_Click(object sender, EventArgs e)
-        {
-            changeFormTo(new Yeruham(_SerialPort));
+            this.Hide();
+            f.ShowDialog();
+            this.Close();
         }
 
         private void Husidman_Click(object sender, EventArgs e)
         {
-            changeFormTo(new Husidman(_SerialPort));
+            changeFormTo(new ScoreUpdate(0)); // 0 mean the index of the team 0 = Husidman
         }
+
+        private void Yeruham_Click(object sender, EventArgs e)
+        {
+            changeFormTo(new ScoreUpdate(1)); // 1 = Yeruham
+        }
+
 
         private void OrtBraudeKarmiel_Click(object sender, EventArgs e)
         {
-            changeFormTo(new OrtBraudeKarmiel(_SerialPort));
+            changeFormTo(new ScoreUpdate(2)); // 2 = OrtBraudeKarmiel
         }
     }
 }

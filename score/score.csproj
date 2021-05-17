@@ -46,23 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Husidman.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Husidman.Designer.cs">
-      <DependentUpon>Husidman.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OrtBraudeKarmiel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OrtBraudeKarmiel.Designer.cs">
-      <DependentUpon>OrtBraudeKarmiel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,29 +60,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="settings.cs" />
-    <Compile Include="Yeruham.cs">
+    <Compile Include="Scoreboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Yeruham.Designer.cs">
-      <DependentUpon>Yeruham.cs</DependentUpon>
+    <Compile Include="Scoreboard.Designer.cs">
+      <DependentUpon>Scoreboard.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Husidman.resx">
-      <DependentUpon>Husidman.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="settings.cs" />
+    <Compile Include="ScoreUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreUpdate.Designer.cs">
+      <DependentUpon>ScoreUpdate.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OrtBraudeKarmiel.resx">
-      <DependentUpon>OrtBraudeKarmiel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Yeruham.resx">
-      <DependentUpon>Yeruham.cs</DependentUpon>
+    <EmbeddedResource Include="Scoreboard.resx">
+      <DependentUpon>Scoreboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreUpdate.resx">
+      <DependentUpon>ScoreUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,19 +110,73 @@
     <None Include="Resources\00.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\10.png" />
-    <Content Include="Resources\100.png" />
+    <None Include="Resources\ניקוד סופי.jpg" />
+    <None Include="Resources\ניקוד ביניים.jpg" />
     <None Include="Resources\חוסידמן ניקוד.jpg" />
     <None Include="Resources\אורט בראודה ניקוד.jpg" />
-    <None Include="Resources\101.png" />
-    <Content Include="Resources\20.png" />
-    <Content Include="Resources\30.png" />
-    <Content Include="Resources\40.png" />
-    <Content Include="Resources\50.png" />
-    <Content Include="Resources\60.png" />
-    <Content Include="Resources\70.png" />
-    <Content Include="Resources\80.png" />
-    <Content Include="Resources\90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100_white.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
