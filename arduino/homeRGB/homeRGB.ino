@@ -1,6 +1,6 @@
 // NeoPixel Ring simple sketch (c) 2013 Shae Erisson
 // released under the GPLv3 license to match the rest of the AdaFruit NeoPixel library
-
+ 
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
 #include <avr/power.h>
@@ -19,7 +19,7 @@ int incomingByte = 0; // for incoming serial data
 // How many NeoPixels are attached to the Arduino?
 #define NUMPIXELS      12
 #define NUMLEDPERWIN   3
-#define TIME_PER_PLAY 60000*1
+#define TIME_PER_PLAY 60000*4
 #define LAZER_VALUE_CHANGE  40 // from this value and up, we consider as lazsr hit
 
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN_LEDS, NEO_GRB + NEO_KHZ800);
@@ -195,7 +195,7 @@ bool checkStopGame(){
 
 void sendInfoToGUI(){
     // send info to control GUI
-    Serial.print(millis()-timeStartPlay);
+    Serial.print(TIME_PER_PLAY-(millis()-timeStartPlay));
     Serial.print(",");
     Serial.println(score);  
 }

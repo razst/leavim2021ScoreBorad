@@ -120,6 +120,9 @@
   <ItemGroup>
     <Content Include="Resources\10.png" />
     <Content Include="Resources\100.png" />
+    <None Include="Resources\iconstart.jpg" />
+    <None Include="Resources\redStop.jpg" />
+    <None Include="Resources\start-button1.jpg" />
     <None Include="Resources\חוסידמן ניקוד.jpg" />
     <None Include="Resources\אורט בראודה ניקוד.jpg" />
     <None Include="Resources\101.png" />
