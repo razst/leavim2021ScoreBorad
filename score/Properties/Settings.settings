@@ -3,10 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="port" Type="System.String" Scope="User">
-      <Value Profile="(Default)">COM17</Value>
-    </Setting>
-    <Setting Name="a" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">COM5</Value>
     </Setting>
     <Setting Name="BaudRate" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">9600</Value>
