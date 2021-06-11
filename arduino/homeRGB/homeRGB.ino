@@ -20,15 +20,21 @@ int incomingByte = 0; // for incoming serial data
 #define NUMPIXELS      12
 #define NUMLEDPERWIN   3
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define TIME_PER_PLAY 60000*4
 #define LAZER_VALUE_CHANGE  40 // from this value and up, we consider as lazsr hit
 
 =======
+=======
+>>>>>>> parent of e6c1cc5 (fix logic and more)
 #define TIME_PER_WIN 5000
 #define TIME_PER_PLAY 60000
 // When we setup the NeoPixel library, we tell it how many pixels, and which pin to use to send signals.
 // Note that for older NeoPixel strips you might need to change the third parameter--see the strandtest
 // example for more information on possible values.
+<<<<<<< HEAD
+>>>>>>> parent of e6c1cc5 (fix logic and more)
+=======
 >>>>>>> parent of e6c1cc5 (fix logic and more)
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN_LEDS, NEO_GRB + NEO_KHZ800);
 
@@ -183,6 +189,7 @@ int findRandWIn() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 bool checkStopGame(){
   if (Serial.available() > 0) {
     // read the incoming byte:
@@ -201,6 +208,8 @@ void sendInfoToGUI(){
     Serial.println(score);  
 }
 
+=======
+>>>>>>> parent of e6c1cc5 (fix logic and more)
 =======
 >>>>>>> parent of e6c1cc5 (fix logic and more)
 void startPlay() {

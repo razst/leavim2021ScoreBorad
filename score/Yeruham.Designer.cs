@@ -40,6 +40,9 @@ namespace score
 =======
             this.StartButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+>>>>>>> parent of e6c1cc5 (fix logic and more)
+=======
 >>>>>>> parent of e6c1cc5 (fix logic and more)
             ((System.ComponentModel.ISupportInitialize)(this.ScorePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -140,6 +143,9 @@ namespace score
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
+<<<<<<< HEAD
+>>>>>>> parent of e6c1cc5 (fix logic and more)
+=======
 >>>>>>> parent of e6c1cc5 (fix logic and more)
             // 
             // Yeruham
@@ -149,7 +155,10 @@ namespace score
             this.BackgroundImage = global::score.Properties.Resources.ניקוד_ירוחם;
             this.ClientSize = new System.Drawing.Size(1604, 881);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of e6c1cc5 (fix logic and more)
             this.Controls.Add(this.label1);
 >>>>>>> parent of e6c1cc5 (fix logic and more)
             this.Controls.Add(this.StartButton);
@@ -187,6 +196,9 @@ namespace score
 =======
         private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Label label1;
+<<<<<<< HEAD
+>>>>>>> parent of e6c1cc5 (fix logic and more)
+=======
 >>>>>>> parent of e6c1cc5 (fix logic and more)
     }
 }

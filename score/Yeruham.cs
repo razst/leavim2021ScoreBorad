@@ -142,6 +142,7 @@ namespace score
         {
             if (mySerialPort != null)
                 mySerialPort.Close();
+<<<<<<< HEAD
         }
 
         private void ScorePictureBox_Click(object sender, EventArgs e)
@@ -167,6 +168,8 @@ namespace score
         private void stopButton_Click(object sender, EventArgs e)
         {
             stopGame();
+=======
+>>>>>>> parent of e6c1cc5 (fix logic and more)
         }
 
         private void StartButton1_Click(object sender, EventArgs e)
