@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.IO.Ports;
-using System.IO;
 
 namespace score
 {
@@ -30,7 +29,6 @@ namespace score
                 this.BackgroundImage = score.Properties.Resources.ניקוד_ירוחם;
             else
                 this.BackgroundImage = score.Properties.Resources.אורט_בראודה_ניקוד;
-            TimerVideo.Visible = false;
         }
 
         private void changeFormTo(Form f)
@@ -113,6 +111,7 @@ namespace score
                 updateScore();
                 if(int.TryParse(splitData[0],out result))
                 {
+                    label1.Text = result.ToString();
                     if (result >= timePerGame)
                     {
                         stopGame();
@@ -145,8 +144,6 @@ namespace score
                 MessageBox.Show("unable to connect to temp sensor, check COM number in settings", "error");
             }
             Global.whoPlay[_whoPlaying] = true; // use this array to check who play
-            TimerVideo.Visible = true; // show the Media Player
-            TimerVideo.URL = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName, "3MinTimer.mp4");
             mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
         }
 

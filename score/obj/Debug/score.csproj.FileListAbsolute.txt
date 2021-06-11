@@ -26,8 +26,3 @@ C:\dev\leavim2021ScoreBorad\score\obj\Debug\score.exe
 C:\dev\leavim2021ScoreBorad\score\obj\Debug\score.pdb
 C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.Scoreboard.resources
 C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.ScoreUpdate.resources
-C:\Users\aviye\Dev\leavim2021ScoreBorad\score\bin\Debug\Interop.WMPLib.dll
-C:\Users\aviye\Dev\leavim2021ScoreBorad\score\bin\Debug\AxInterop.WMPLib.dll
-C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\Interop.WMPLib.dll
-C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\AxInterop.WMPLib.dll
-C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.csproj.ResolveComReference.cache
