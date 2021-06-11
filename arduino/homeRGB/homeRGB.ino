@@ -12,27 +12,46 @@ const int LDR2 = A2;
 const int LDR3 = A3;
 int incomingByte = 0; // for incoming serial data
 
-
 // Which pin on the Arduino is connected to the NeoPixels?
 // On a Trinket or Gemma we suggest changing this to 1
 #define PIN_LEDS          6
+
 // How many NeoPixels are attached to the Arduino?
 #define NUMPIXELS      12
 #define NUMLEDPERWIN   3
+<<<<<<< HEAD
 #define TIME_PER_PLAY 60000*4
 #define LAZER_VALUE_CHANGE  40 // from this value and up, we consider as lazsr hit
 
+=======
+#define TIME_PER_WIN 5000
+#define TIME_PER_PLAY 60000
+// When we setup the NeoPixel library, we tell it how many pixels, and which pin to use to send signals.
+// Note that for older NeoPixel strips you might need to change the third parameter--see the strandtest
+// example for more information on possible values.
+>>>>>>> parent of e6c1cc5 (fix logic and more)
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN_LEDS, NEO_GRB + NEO_KHZ800);
 
 int delayval = 100; // delay for half a second
 int activeWin;
 int lastwin = -1;
+
+const int LAZER_VALUE_CHANGE = 40; // from this value and up, we consider as lazsr hit
 int pre_ldr_value[4] = {0, 0, 0, 0};
-unsigned long timeStartPlay = 0;
+int timer = 0;
 int score = 0;
 
 
+void colorWipe(uint32_t color) {
+  for (int i = 0; i < pixels.numPixels(); i++) { // For each pixel in strip...
+    pixels.setPixelColor(i, pixels.Color(255,   255,   255));         //  Set pixel's color (in RAM)
+    pixels.show();
+  }
+}
 
+void clearLED() {
+  colorWipe(pixels.Color(0,   0,   0));
+}
 
 void lightWin(int win, int r, int g, int b)
 {
@@ -69,12 +88,10 @@ boolean checkLDRs() {
   int Read_val[4] = {analogRead(LDR0), analogRead(LDR1), analogRead(LDR2), analogRead(LDR3)};
   for (int i = 0; i < 4; i++) // i = index of all windows 0-4
   {
-//    Serial.print("Read_val[");
-//    Serial.print(i);
-//    Serial.print("]:");
-//    Serial.println(Read_val[1]);
-//    Serial.print("pre_ldr_value: ");
-//    Serial.println(pre_ldr_value[1]);
+    //    Serial.print("Read_val: ");
+    //    Serial.println(Read_val[i]);
+    //    Serial.print("pre_ldr_value: ");
+    //    Serial.println(pre_ldr_value[i]);
     if (pre_ldr_value[i] == 0) { // first time
       pre_ldr_value[i] = Read_val[i];
     }
@@ -103,10 +120,9 @@ boolean checkLDRs() {
           Serial.println(pre_ldr_value[i]);
           if (activeWin == i) // if we got a hit on the active window
           {
-            score = score + 10;
-            sendInfoToGUI();
-            fillLEDAndBlink(pixels.Color(0, 255, 0), 0, NUMPIXELS, 3000);
+            fillLEDAndSleep(pixels.Color(0, 255, 0), 0, NUMPIXELS, 3000);
             fillLEDAndSleep(pixels.Color(255, 255, 255), 0, NUMPIXELS, 0);
+            score = score + 10;
             isHit  = true;
           }
           else // hit on not active window
@@ -114,8 +130,7 @@ boolean checkLDRs() {
             if (score > 0) {
               score = score - 10;
             }
-            sendInfoToGUI();
-            fillLEDAndBlink(pixels.Color(0, 0, 255), 0, NUMPIXELS, 3000);
+            fillLEDAndSleep(pixels.Color(0, 0, 255), 0, NUMPIXELS, 3000);
             fillLEDAndSleep(pixels.Color(255, 255, 255), 0, NUMPIXELS, 0);
             lightWin(activeWin, 255, 0, 0);
           }
@@ -126,20 +141,6 @@ boolean checkLDRs() {
   }
   return isHit;
 }
-
-
-void fillLEDAndBlink(uint32_t color, uint16_t first, uint16_t count, int delay_t) {
-
-  unsigned long startMillis = millis();  //initial start time
-  while (millis() - startMillis <= delay_t) {
-    fillLEDAndSleep(color, 0, NUMPIXELS, 0);  
-    delay(300);
-    fillLEDAndSleep(pixels.Color(0, 0, 0), 0, NUMPIXELS, 0);
-    delay(100);  
-  }
-  
-}
-
 
 void fillLEDAndSleep(uint32_t color, uint16_t first, uint16_t count, int delay_t) {
 
@@ -172,16 +173,16 @@ int findRandWIn() {
     Serial.println("activeWin == lastwin");
     activeWin = random(4);
   }
-//  activeWin=1;
   Serial.print("second rand");
   Serial.println(activeWin);
   lastwin = activeWin;
 
   pre_ldr_value[activeWin] = 0;
-  fillLEDAndSleep(pixels.Color(255, 255, 255), 0, NUMPIXELS, 0);
+  clearLED();
   lightWin(activeWin, 255, 0, 0);
 }
 
+<<<<<<< HEAD
 bool checkStopGame(){
   if (Serial.available() > 0) {
     // read the incoming byte:
@@ -200,21 +201,18 @@ void sendInfoToGUI(){
     Serial.println(score);  
 }
 
+=======
+>>>>>>> parent of e6c1cc5 (fix logic and more)
 void startPlay() {
-  Serial.println("0,0"); // send zeros to GUI
-  fillLEDAndSleep(pixels.Color(255, 0, 0), 0, NUMPIXELS, 3000);
-  fillLEDAndSleep(pixels.Color(255, 255, 0), 0, NUMPIXELS, 3000);
-  fillLEDAndBlink(pixels.Color(0, 255, 0), 0, NUMPIXELS, 3000);
-  score=0;
-  timeStartPlay = millis();  //initial start time
+  unsigned long startMillis = millis();  //initial start time
+  int hit = 0;
   findRandWIn();
-  while (millis() - timeStartPlay <= TIME_PER_PLAY) {
-    sendInfoToGUI();
+  while (millis() - startMillis <= TIME_PER_PLAY) {
     if (checkLDRs()) {
+      hit++;
+      Serial.print("hit,");
+      Serial.println(hit);
       findRandWIn();
-    }
-    if (checkStopGame()){
-      break;
     }
     delay(10);
   }
@@ -223,15 +221,17 @@ void startPlay() {
 
 void loop() {
 
-  // wait for a signal to start game...
+  // wait for signal to start...
   if (Serial.available() > 0) {
     // read the incoming byte:
     incomingByte = Serial.read();
     if (incomingByte == 83) { // we got the "S" latter
+      fillLEDAndSleep(pixels.Color(255, 0, 0), 0, NUMPIXELS, 3000);
+      fillLEDAndSleep(pixels.Color(255, 255, 0), 0, NUMPIXELS, 3000);
+      fillLEDAndSleep(pixels.Color(0, 255, 0), 0, NUMPIXELS, 3000);
       startPlay();
     }
   }
-  // game ended, show white LEDs
+
   fillLEDAndSleep(pixels.Color(255, 255, 255), 0, NUMPIXELS, 0);
-  delay(50);
 }

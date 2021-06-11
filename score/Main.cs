@@ -27,9 +27,18 @@ namespace score
         }
         private void changeFormTo(Form f)
         {
+<<<<<<< HEAD
             this.Hide();
             f.ShowDialog();
             this.Close();
+=======
+            //this.Hide();
+            f.ShowDialog();
+            f.StartPosition = FormStartPosition.Manual;
+            f.Location = f.Location; // TODO  did you mean = this.Location ?
+            f.Size = f.Size;
+            //this.Close();
+>>>>>>> parent of e6c1cc5 (fix logic and more)
         }
 
         private void Husidman_Click(object sender, EventArgs e)

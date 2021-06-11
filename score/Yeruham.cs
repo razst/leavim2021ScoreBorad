@@ -38,24 +38,16 @@ namespace score
                                 SerialDataReceivedEventArgs e)
         {
             SerialPort sp = (SerialPort)sender;
-            try
-            {
-                indata = sp.ReadLine();
+            indata = sp.ReadLine();
 
-                this.BeginInvoke(new EventHandler(displayDataEvent));
-
-            }
-            catch (System.IO.IOException) 
-            {
-                
-            }
+            this.Invoke(new EventHandler(displayDataEvent));
 
         }
 
 
         private void displayDataEvent(object sender, EventArgs e)
         {
-          
+            
             if (indata.Contains(','))
             {
                // label1.Text = indata;
@@ -117,7 +109,6 @@ namespace score
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            stopGame();
             mySerialPort = new SerialPort(Properties.Settings.Default.port);
 
             mySerialPort.BaudRate = 9600;
@@ -149,24 +140,8 @@ namespace score
 
         private void Yeruham_FormClosing(object sender, FormClosingEventArgs e)
         {
-            stopGame();
-        }
-
-
-        private void stopGame() 
-        {
             if (mySerialPort != null)
-            {
-                mySerialPort.WriteLine("E");
-                mySerialPort.DataReceived -= new SerialDataReceivedEventHandler(DataReceivedHandler);
                 mySerialPort.Close();
-                mySerialPort = null;
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            stopGame();
         }
 
         private void ScorePictureBox_Click(object sender, EventArgs e)

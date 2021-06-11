@@ -30,12 +30,17 @@ namespace score
         private void InitializeComponent()
         {
             this.ScorePictureBox = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.stopButton = new System.Windows.Forms.PictureBox();
             this.StartButton = new System.Windows.Forms.PictureBox();
+=======
+            this.StartButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+>>>>>>> parent of e6c1cc5 (fix logic and more)
             ((System.ComponentModel.ISupportInitialize)(this.ScorePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -114,11 +119,28 @@ namespace score
             this.StartButton.Image = global::score.Properties.Resources.iconstart;
             this.StartButton.Location = new System.Drawing.Point(1255, 349);
             this.StartButton.Name = "StartButton";
+<<<<<<< HEAD
             this.StartButton.Size = new System.Drawing.Size(337, 81);
             this.StartButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.StartButton.TabIndex = 10;
             this.StartButton.TabStop = false;
             this.StartButton.Click += new System.EventHandler(this.StartButton1_Click);
+=======
+            this.StartButton.Size = new System.Drawing.Size(131, 55);
+            this.StartButton.TabIndex = 1;
+            this.StartButton.Text = "Start";
+            this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(539, 412);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+>>>>>>> parent of e6c1cc5 (fix logic and more)
             // 
             // Yeruham
             // 
@@ -126,6 +148,10 @@ namespace score
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::score.Properties.Resources.ניקוד_ירוחם;
             this.ClientSize = new System.Drawing.Size(1604, 881);
+<<<<<<< HEAD
+=======
+            this.Controls.Add(this.label1);
+>>>>>>> parent of e6c1cc5 (fix logic and more)
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.stopButton);
             this.Controls.Add(this.label3);
@@ -151,11 +177,16 @@ namespace score
         #endregion
 
         private System.Windows.Forms.PictureBox ScorePictureBox;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox stopButton;
         private System.Windows.Forms.PictureBox StartButton;
+=======
+        private System.Windows.Forms.Button StartButton;
+        private System.Windows.Forms.Label label1;
+>>>>>>> parent of e6c1cc5 (fix logic and more)
     }
 }
