@@ -12,6 +12,7 @@ C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.csproj.CoreCompile
 C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.exe
 C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.pdb
 C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.Main.resources
+C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.Yeruham.resources
 C:\dev\leavim2021ScoreBorad\score\bin\Debug\score.exe.config
 C:\dev\leavim2021ScoreBorad\score\bin\Debug\score.exe
 C:\dev\leavim2021ScoreBorad\score\bin\Debug\score.pdb
@@ -24,5 +25,3 @@ C:\dev\leavim2021ScoreBorad\score\obj\Debug\score.Yeruham.resources
 C:\dev\leavim2021ScoreBorad\score\obj\Debug\score.csproj.GenerateResource.cache
 C:\dev\leavim2021ScoreBorad\score\obj\Debug\score.exe
 C:\dev\leavim2021ScoreBorad\score\obj\Debug\score.pdb
-C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.Scoreboard.resources
-C:\Users\aviye\Dev\leavim2021ScoreBorad\score\obj\Debug\score.ScoreUpdate.resources

@@ -36,8 +36,6 @@
             // 
             // Yeruham
             // 
-            this.Yeruham.CausesValidation = false;
-            this.Yeruham.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Yeruham.Location = new System.Drawing.Point(933, 530);
             this.Yeruham.Name = "Yeruham";
             this.Yeruham.Size = new System.Drawing.Size(127, 62);
@@ -48,7 +46,6 @@
             // 
             // OrtBraudeKarmiel
             // 
-            this.OrtBraudeKarmiel.CausesValidation = false;
             this.OrtBraudeKarmiel.Location = new System.Drawing.Point(504, 530);
             this.OrtBraudeKarmiel.Name = "OrtBraudeKarmiel";
             this.OrtBraudeKarmiel.Size = new System.Drawing.Size(127, 62);
@@ -59,7 +56,6 @@
             // 
             // Husidman
             // 
-            this.Husidman.CausesValidation = false;
             this.Husidman.Location = new System.Drawing.Point(1362, 530);
             this.Husidman.Name = "Husidman";
             this.Husidman.Size = new System.Drawing.Size(127, 62);

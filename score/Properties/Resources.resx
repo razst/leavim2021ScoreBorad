@@ -118,101 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="אורט בראודה ניקוד" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\אורט בראודה ניקוד.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ניקוד ירוחם" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ניקוד ירוחם.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  <data name="ניקוד ביניים" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ניקוד ביניים.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="חוסידמן ניקוד" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\חוסידמן ניקוד.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ניקוד סופי" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ניקוד סופי.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="80" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="redStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\redStop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="start-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\start-button1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  <data name="40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="60" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ניקוד ירוחם" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ניקוד ירוחם.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="אורט בראודה ניקוד" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\אורט בראודה ניקוד.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="70" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="90" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="00_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\00_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="10_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\10_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="20_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="30_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\30_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="40_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\40_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="50_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\50_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="60_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\60_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="70_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\70_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="80_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\80_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="90_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\90_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="100_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\100_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="אורט בראודה ניקוד" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\אורט בראודה ניקוד.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconstart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconstart.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="חוסידמן ניקוד" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\חוסידמן ניקוד.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
